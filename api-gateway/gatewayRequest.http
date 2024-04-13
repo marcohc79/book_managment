@@ -1,0 +1,5 @@
+### Get BookDTO
+GET http://localhost:8082/book-service/books/information/1
+
+### Get all authors
+GET http://localhost:8082/author-service/authors/get

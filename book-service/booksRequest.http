@@ -1,0 +1,33 @@
+### Get all books
+GET http://localhost:9002/books/get
+
+### Get a book for id
+GET http://localhost:9002/books/get/1
+
+### Save book
+POST http://localhost:9002/books/save/222
+Content-Type: application/json
+
+{
+  "isbn": 1234,
+  "title": "test",
+  "yearOfPublication": "2024-12-04",
+  "description": "test lorem lorem lorem"
+}
+
+### Get author
+GET http://localhost:9002/books/get/authors/221
+
+### Edit book
+PUT http://localhost:9002/books/edit/1
+Content-Type: application/json
+
+{
+  "description": "hello world, my is Test."
+}
+
+### Get BookDTO
+GET http://localhost:9002/books/information/1
+
+### Add author
+PUT http://localhost:9002/books/1/add/110

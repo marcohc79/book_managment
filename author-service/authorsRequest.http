@@ -1,0 +1,26 @@
+### Get all authors
+GET http://localhost:9001/authors/get
+
+### Save an author
+POST localhost:9001/authors/save
+Content-Type: application/json
+
+{
+  "fullName": "prueba",
+  "birthDate": "1995-12-31",
+  "nationality": "opa"
+}
+
+### Edit an author
+PUT localhost:9001/authors/edit/222
+Content-Type: application/json
+
+{
+  "fullName": "I am 223"
+}
+
+### Find auther by id
+GET localhost:9001/authors/get/221
+
+### Delete author
+DELETE localhost:9001/authors/delete/222

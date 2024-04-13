@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: book-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_book?serverTimezone=UTC
+    username: db_user
+    password: db_password
+
+server:
+  port: 9002
